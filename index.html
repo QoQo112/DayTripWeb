@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EEITour - Travel Agency</title>
+
+<!-- 
+    - favicon
+-->
+<link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+<!-- 
+    - custom css link
+-->
+<link rel="stylesheet" href="./assets/css/style.css">
+
+<!-- 
+    - google font link
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+<!-- 
+    - #HEADER
+-->
+
+<header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+    <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+        <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+        </div>
+
+        <div class="wrapper">
+            <p class="helpline-title">聯絡我們 :</p>
+
+            <p class="helpline-number">+886 (909) 909 909</p>
+        </div>
+
+        </a>
+
+        <a href="#" class="logo">
+            <!-- <img src="./assets/images/logo.png" alt=""> -->
+        </a>
+
+        <div class="header-btn-group">
+
+        <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+        </button>
+
+        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        </div>
+
+    </div>
+    </div>
+
+    <div class="header-bottom">
+    <div class="container">
+
+        <ul class="social-list">
+
+        <li>
+            <a href="https://www.facebook.com/IIIDEITc/?locale=zh_TW" class="social-link" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://twitter.com/?lang=zh-Hant" class="social-link" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.youtube.com/@iSpan-TC" class="social-link" target="_blank">
+            <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+        </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+            <a href="#" class="logo">
+            <img src="./assets/images/logo-blue.svg" alt="EEITour logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+            <li>
+            <a href="#home" class="navbar-link" data-nav-link>主頁</a>
+            </li>
+
+            <li>
+            <a href="#" class="navbar-link" data-nav-link>關於我們</a>
+            </li>
+
+            <li>
+            <a href="#destination" class="navbar-link" data-nav-link>熱門景點</a>
+            </li>
+
+
+            <li>
+            <a href="#gallery" class="navbar-link" data-nav-link>相冊</a>
+            </li>
+
+            <li>
+            <a href="#contact" class="navbar-link" data-nav-link>聯絡我們</a>
+            </li>
+
+        </ul>
+
+        </nav>
+
+        <a href="./product.html">
+            <button class="btn btn-primary">了解詳情</button>
+        </a>
+
+    </div>
+    </div>
+
+</header>
+
+<main>
+    <article>
+
+    <!-- 
+        - #HERO
+    -->
+
+    <section class="hero" id="home">
+        <div class="container">
+
+        <h2 class="h1 hero-title">探索台灣的美好</h2>
+
+        <p class="hero-text">
+            台灣是一個美麗而多元的島嶼，擁有壯麗的山脈、清澈的溪流、迷人的海岸線和豐富的文化遺產。無論是品嚐美食、探索自然、體驗文化，還是享受悠閒的假日，台灣都是一個令人難以忘懷的目的地。來到台灣，你將會發現這個小島嶼充滿了驚喜和美好。
+        </p>
+
+        <div class="btn-group">
+            <a  href="./product.html">
+                <button class="btn btn-primary">了解更多</button>
+            </a>
+
+            <a href="./product.html">
+                <button class="btn btn-secondary">馬上預定</button>
+            </a>
+        </div>
+
+        
+            
+        
+
+        </div>
+    </section>
+
+
+
+
+
+    <!-- 
+        - #TOUR SEARCH
+    -->
+
+    <section class="tour-search">
+        <div class="container">
+
+        <form action="" class="tour-search-form">
+
+            <div class="input-wrapper">
+            <label for="destination" class="input-label">探索台灣</label>
+
+            <input type="text" name="destination" id="destination" required placeholder="請輸入目的地"
+                class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+            <label for="people" class="input-label">人數</label>
+
+            <input type="number" name="people" id="people" required placeholder="請輸入出行人數" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+            <label for="checkin" class="input-label">入住日期</label>
+
+            <input type="date" name="checkin" id="checkin" required class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+            <label for="checkout" class="input-label">退房日期</label>
+
+            <input type="date" name="checkout" id="checkout" required class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">搜出好價!</button>
+
+        </form>
+
+        </div>
+    </section>
+
+
+
+
+
+    <!-- 
+        - #POPULAR
+    -->
+
+    <section class="popular" id="destination">
+        <div class="container">
+
+        <p class="section-subtitle">未探索之地</p>
+
+        <h2 class="h2 section-title">熱門景點</h2>
+
+        <p class="section-text">
+            來到台灣，絕對不能錯過夜市文化，各種美食、精彩表演、熱鬧氛圍一次滿足！快來體驗一場獨特又美味的台灣之旅吧！
+        </p>
+
+        <ul class="popular-list">
+
+            <li>
+            <div class="popular-card">
+
+                <figure class="card-img">
+                <img src="" alt="San miguel, italy" loading="lazy" id="card-img01">
+                </figure>
+
+                <div class="card-content">
+
+                <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+
+                <p class="card-subtitle">
+                    <a href="./product.html" id="card_title01"></a>
+                </p>
+
+                <h3 class="h3 card-title">
+                    <a href="./product.html"></a>
+                </h3>
+
+                <p class="card-text">
+                    享譽全球的溫泉勝地，舒適的湯池和療癒的泉質，令人身心放鬆。
+                </p>
+
+                </div>
+
+            </div>
+            </li>
+
+            <li>
+            <div class="popular-card">
+
+                <figure class="card-img">
+                <img src="./assets/images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy" id="card-img01">
+                </figure>
+
+                <div class="card-content">
+
+                <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+
+                <p class="card-subtitle">
+                    <a href="#"></a>
+                </p>
+
+                <h3 class="h3 card-title">
+                    <a href="./product.html"></a>
+                </h3>
+
+                <p class="card-text">
+                    大稻埕碼頭，歷史悠久的舊港口，現已轉型為文化創意產業區，融合歷史與現代。
+                </p>
+
+                </div>
+
+            </div>
+            </li>
+
+            <li>
+            <div class="popular-card">
+
+                <figure class="card-img">
+                <img src="./assets/images/popular-3.jpg" alt="Kyoto temple, japan" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+
+                <p class="card-subtitle">
+                    <a href="#"></a>
+                </p>
+
+                <h3 class="h3 card-title">
+                    <a href="./product.html"></a>
+                </h3>
+
+                <p class="card-text">
+                    士林官邸，日治時期高官官邸，現為美術館和公園，充滿歷史氣息。
+                </p>
+
+                </div>
+
+            </div>
+            </li>
+
+        </ul>
+
+        <div class="loadMore">
+            <a href="./load.html">
+                <button class="btn btn-primary">更多景點</button>
+            </a>
+            
+            
+        </div>
+        
+
+        </div>
+    </section>
+
+    <div class="horizon_area">
+
+    </div>
+
+
+
+    <!-- 
+        - #PACKAGE
+    -->
+
+    <!-- <section class="package" id="package">
+        <div class="container">
+
+        <p class="section-subtitle">Popular Packeges</p>
+
+        <h2 class="h2 section-title">Checkout Our Packeges</h2>
+
+        <p class="section-text">
+            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
+            Sit ornare
+            mollitia tenetur, aptent.
+        </p>
+
+        <ul class="package-list">
+
+            <li>
+            <div class="package-card">
+
+                <figure class="card-banner">
+                <img src="./assets/images/packege-1.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
+
+                <p class="card-text">
+                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
+                    cras, aspernatur.
+                </p>
+
+                <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                    <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7D/6N</p>
+                    </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                    <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 10</p>
+                    </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                    <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Malaysia</p>
+                    </div>
+                    </li>
+
+                </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                <div class="wrapper">
+
+                    <p class="reviews">(25 reviews)</p>
+
+                    <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    </div>
+
+                </div>
+
+                <p class="price">
+                    $750
+                    <span>/ per person</span>
+                </p>
+
+                <button class="btn btn-secondary">Book Now</button>
+
+                </div>
+
+            </div>
+            </li>
+
+            <li>
+            <div class="package-card">
+
+                <figure class="card-banner">
+                <img src="./assets/images/packege-2.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                <h3 class="h3 card-title">Summer Holiday To The Oxolotan River</h3>
+
+                <p class="card-text">
+                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
+                    cras, aspernatur.
+                </p>
+
+                <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                    <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7D/6N</p>
+                    </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                    <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 10</p>
+                    </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                    <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Malaysia</p>
+                    </div>
+                    </li>
+
+                </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                <div class="wrapper">
+
+                    <p class="reviews">(20 reviews)</p>
+
+                    <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    </div>
+
+                </div>
+
+                <p class="price">
+                    $520
+                    <span>/ per person</span>
+                </p>
+
+                <button class="btn btn-secondary">Book Now</button>
+
+                </div>
+
+            </div>
+            </li>
+
+            <li>
+            <div class="package-card">
+
+                <figure class="card-banner">
+                <img src="./assets/images/packege-3.jpg" alt="Santorini Island's Weekend Vacation" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                <h3 class="h3 card-title">Santorini Island's Weekend Vacation</h3>
+
+                <p class="card-text">
+                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
+                    cras, aspernatur.
+                </p>
+
+                <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                    <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7D/6N</p>
+                    </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                    <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 10</p>
+                    </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                    <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Malaysia</p>
+                    </div>
+                    </li>
+
+                </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                <div class="wrapper">
+
+                    <p class="reviews">(40 reviews)</p>
+
+                    <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    </div>
+
+                </div>
+
+                <p class="price">
+                    $660
+                    <span>/ per person</span>
+                </p>
+
+                <button class="btn btn-secondary">Book Now</button>
+
+                </div>
+
+            </div>
+            </li>
+
+        </ul>
+
+        <button class="btn btn-primary">View All Packages</button>
+
+        </div>
+    </section> -->
+
+
+
+
+
+    <!-- 
+        - #GALLERY
+    -->
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+
+        <p class="section-subtitle">台灣一隅</p>
+
+        <h2 class="h2 section-title">旅者紀實</h2>
+
+        <p class="section-text">
+            「旅行是唯一買下來後，更富有的東西。」- 亞伯拉罕·馬斯洛
+        </p>
+
+        <ul class="gallery-list">
+
+            <li class="gallery-item">
+            <figure class="gallery-image">
+                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
+            </figure>
+            </li>
+
+            <li class="gallery-item">
+            <figure class="gallery-image">
+                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
+            </figure>
+            </li>
+
+            <li class="gallery-item">
+            <figure class="gallery-image">
+                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
+            </figure>
+            </li>
+
+            <li class="gallery-item">
+            <figure class="gallery-image">
+                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
+            </figure>
+            </li>
+
+            <li class="gallery-item">
+            <figure class="gallery-image">
+                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
+            </figure>
+            </li>
+
+        </ul>
+
+        </div>
+    </section>
+
+
+
+
+
+    <!-- 
+        - #CTA
+    -->
+
+    <section class="cta" id="contact">
+        <div class="container">
+
+        <div class="cta-content">
+            <p class="section-subtitle"></p>
+
+            <h2 class="h2 section-title">收拾行李，踏上旅程!</h2>
+
+            <p class="section-text">
+                整理心情，收拾行囊，踏上未知之旅。探索世界，尋找自我，盡情享受旅途的每個瞬間。
+            </p>
+        </div>
+
+        <button class="btn btn-secondary">聯絡我們 !</button>
+
+        </div>
+    </section>
+
+    </article>
+</main>
+
+
+
+
+
+<!-- 
+    - #FOOTER
+-->
+
+<footer class="footer">
+
+    <div class="footer-top">
+    <div class="container">
+
+        <div class="footer-brand">
+
+        <a href="#" class="logo">
+            <img src="./assets/images/logo.png" alt="EEITour logo">
+        </a>
+
+        <p class="footer-text">
+            我們重視您的意見和需求，若您對我們的產品或服務有任何問題或建議，請隨時聯絡我們。我們的客服團隊將竭誠為您提供專業的協助，以確保您得到最滿意的解決方案。
+        </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+        <h4 class="contact-title">聯絡我們!</h4>
+
+        <p class="contact-text">
+            歡迎與我們聯絡!
+        </p>
+
+        <ul>
+
+            <li class="contact-item">
+            <ion-icon name="call-outline"></ion-icon>
+
+            <a href="tel:+886909909909" class="contact-link">+886 (909) 909 909</a>
+            </li>
+
+            <li class="contact-item">
+            <ion-icon name="mail-outline"></ion-icon>
+
+            <a href="mailto:weitsung@ispan.com.tw" class="contact-link">信箱</a>
+            </li>
+
+            <li class="contact-item">
+            <ion-icon name="location-outline"></ion-icon>
+
+            <address>408台中市南屯區公益路二段51號18樓</address>
+            </li>
+
+        </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+        <p class="form-text">
+            訂閱電子報獲得最新促銷資訊!
+        </p>
+
+        <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="請輸入信箱!" required>
+
+            <button type="submit" class="btn btn-secondary">訂閱</button>
+        </form>
+
+        </div>
+
+    </div>
+    </div>
+
+    <div class="footer-bottom">
+    <div class="container">
+
+        <p class="copyright">
+        &copy; 2023 <a href="">EEITour</a>. All rights reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+        <li>
+            <a href="#" class="footer-bottom-link">隱私權</a>
+        </li>
+
+        <li>
+            <a href="#" class="footer-bottom-link">
+                條款與條件</a>
+        </li>
+
+        <li>
+            <a href="#" class="footer-bottom-link">常見問題</a>
+        </li>
+
+        </ul>
+
+    </div>
+    </div>
+
+</footer>
+
+
+
+
+
+<!-- 
+    - #GO TO TOP
+-->
+
+<a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+</a>
+
+
+
+
+
+<!-- 
+    - custom js link
+-->
+<script src="./assets/js/script.js"></script>
+
+<!-- 
+    - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
