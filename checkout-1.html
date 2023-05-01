@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Checkout-2</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/all.css" />
+<script src="./assets/js/checkout.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+    <div class="col-md-10">
+        <nav class="navbar navbar-expand-lg navbar-light px-0">
+        <a class="navbar-brand" href="./index.html">EEITour</a>
+        <ul class="list-unstyled mb-0 ms-md-auto d-flex align-items-center justify-content-between justify-content-md-end w-100 mt-md-0 mt-4">
+            <li class="me-md-6 me-3 position-relative custom-step-line"><i class="fas fa-check-circle d-md-inline d-block text-center" style="color:green"></i> <span class="text-nowrap">挑選商品</span></li>
+            <li class="me-md-6 me-3 position-relative custom-step-line"><i class="fas fa-check-circle d-md-inline d-block text-center" style="color:green"></i> <span class="text-nowrap">選定商品</span></li>
+            <li><i class="fas fa-dot-circle d-md-inline d-block text-center" style="color:red"></i> <span class="text-nowrap">確認訂單</span></li>
+        </ul>
+        </nav>
+    </div>
+    </div>
+    <div class="row justify-content-center">
+    <div class="col-md-10">
+        <h3 class="fw-bold mb-4 pt-3">確認訂單</h3>
+    </div>
+    </div>
+    <div class="row flex-row-reverse justify-content-center pb-5">
+    <div class="col-md-4">
+        <div class="border p-4 mb-4">
+        <div class="d-flex">
+            <img src="https://images.unsplash.com/photo-1502743780242-f10d2ce370f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1916&q=80" alt="" class="me-2" style="width: 48px; height: 48px; object-fit: cover">
+            <div class="w-100">
+            <div class="d-flex justify-content-between">
+                <p class="mb-0 fw-bold" id="checkoutName">Lorem ipsum</p>
+                <p class="mb-0">NT$1,080</p>
+            </div>
+            <p class="mb-0 fw-bold" id="checkoutNumber">x1</p>
+            </div>
+        </div>
+        <!-- <div class="d-flex mt-2">
+            <img src="https://images.unsplash.com/photo-1502743780242-f10d2ce370f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1916&q=80" alt="" class="me-2" style="width: 48px; height: 48px; object-fit: cover">
+            <div class="w-100">
+            <div class="d-flex justify-content-between">
+                <p class="mb-0 fw-bold">Lorem ipsum</p>
+                <p class="mb-0">NT$12,000</p>
+            </div>
+            <p class="mb-0 fw-bold">x1</p>
+            </div>
+        </div> -->
+        <table class="table mt-4 border-top border-bottom text-muted">
+            <tbody>
+            <tr>
+                <th scope="row" class="border-0 px-0 pt-4 font-weight-normal">小計</th>
+                <td class="text-end border-0 px-0 pt-4" id="subtotal">NT$24,000</td>
+            </tr>
+            <tr>
+                <th scope="row" class="border-0 px-0 pt-0 pb-4 font-weight-normal">付款方式</th>
+                <td class="text-end border-0 px-0 pt-0 pb-4">ApplePay</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="d-flex justify-content-between mt-4">
+            <p class="mb-0 h4 fw-bold">付款金額</p>
+            <p class="mb-0 h4 fw-bold"  id="total">NT$24,000</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="accordion" id="accordionExample">
+        <div class="card rounded-0">
+            <div class="card-header bg-white border-0 py-3" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <p class="mb-0 position-relative custom-checkout-label">常用地址 - 1</p>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="card-body bg-light ps-5 py-4">
+                <div class="mb-2">
+                <label for="Lorem ipsum1" class="text-muted mb-0">郵遞區號</label>
+                <input type="number" class="form-control" id="Lorem ipsum1" placeholder="eg: 408">
+                </div>
+                <div class="mb-0">
+                <label for="Lorem ipsum2" class="text-muted mb-0">詳細地址</label>
+                <input type="text" class="form-control" id="Lorem ipsum2" placeholder="台中市南屯區公益路二段51號18樓">
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="card rounded-0">
+            <div class="card-header bg-white border-0 py-3 collapsed" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <p class="mb-0 position-relative custom-checkout-label">常用地址 - 2</p>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="card-body bg-light ps-5 py-4">
+                <div class="mb-2">
+                <label for="Lorem ipsum1" class="text-muted mb-0">郵遞區號</label>
+                <input type="number" class="form-control" id="Lorem ipsum1" placeholder="eg: 408">
+                </div>
+                <div class="mb-0">
+                <label for="Lorem ipsum2" class="text-muted mb-0">詳細地址</label>
+                <input type="text" class="form-control" id="Lorem ipsum2" placeholder="台中市南屯區公益路二段51號18樓">
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="card rounded-0">
+            <div class="card-header bg-white border-0 py-3 collapsed" id="headingThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            <p class="mb-0 position-relative custom-checkout-label">常用地址 - 3</p>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="card-body bg-light ps-5 py-4">
+                <div class="mb-2">
+                <label for="Lorem ipsum1" class="text-muted mb-0">郵遞區號</label>
+                <input type="text" class="form-control" id="Lorem ipsum1" placeholder="eg: 408">
+                </div>
+                <div class="mb-0">
+                <label for="Lorem ipsum2" class="text-muted mb-0">詳細地址</label>
+                <input type="text" class="form-control" id="Lorem ipsum2" placeholder="台中市南屯區公益路二段51號18樓">
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="d-flex flex-column-reverse flex-md-row mt-4 justify-content-between align-items-md-center align-items-end w-100">
+        <a href="./product.html" class="text-dark mt-md-0 mt-3"><i class="fas fa-chevron-left me-2"></i>再逛一下 !</a>
+        <a href="./checkout-success.html" class="btn btn-dark py-3 px-7">完成訂購</a>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</html>
